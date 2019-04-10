@@ -32,6 +32,7 @@ class ArticlesController < ApplicationController
 
     if @article.update(article_params)
       redirect_to @article
+      pp 'this is a bug'
     else
       render 'edit'
     end
